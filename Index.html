@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Placement Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+        h1, h3 {
+            color: #E91E63;
+        }
+        .container {
+            margin: 20px;
+        }
+        .alert-box {
+            background-color: #f8bbd0;
+            border: 1px solid #f48fb1;
+            border-radius: 5px;
+            padding: 10px;
+            display: inline-block;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Script Placement Example</h1>
+
+        <div class="section">
+            <h3>1. Script in Head</h3>
+            <script>
+                alert("Script in Head");
+            </script>
+        </div>
+
+        <div class="section">
+            <h3>2. Script Before HTML</h3>
+            <script>
+                alert("Script Before HTML");
+            </script>
+        </div>
+
+        <div class="section">
+            <h3>3. Script Inside HTML</h3>
+            <script>
+                alert("Script Inside HTML");
+            </script>
+            <p>Content below the script tag inside HTML.</p>
+        </div>
+
+        <div class="section">
+            <h3>4. Script After HTML</h3>
+        </div>
+
+        <script>
+            alert("Script After HTML");
+        </script>
+    </div>
+</body>
+</html>
